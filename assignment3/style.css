@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header 
+{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(donate2.png);
+    height: 100vh;
+    background-size: contain; /* there is auto, cover that can be used in place of contain */
+    background-position: center;
+}
+
+/* the command below moves faq, home etc as float to the left or right */
+.main-nav {
+    float: right; list-style: none; margin-top: 30px; /* margin moves home, faq vertically down by 30 */
+}
+
+.main-nav li {
+    display: -webkit-inline-box;  /* this defines the orientation as horizontal ( inline table or box */
+}
+
+.main-nav li a {
+    color : gold;
+    text-decoration: none; /* to underline a tag inside attribute use text-decoration style */
+    padding: 5px 20px; /* shifts space outward from the left */
+    font-family: Roboto, sans-serif, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
+
+.main-nav li.active a {
+    border : 2px solid grey;
+}
+
+/* to create box that hover around element tag a */
+.main-nav li a:hover
+{
+ border : 2px solid grey
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    float: left; /* aligns the logo img so text can fit in */
+}
+
+body {
+    font-family: monospace;
+}
+
+/*.row {
+ max-width: 1200px;
+ margin: unset;   specified as auto usually but in this case not so 
+}  */
+
+
+.help {
+    position: absolute;
+    width: 1200px;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+h1 {
+    color: gold;
+    text-transform: uppercase;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 255px;
+}
+
+.button {
+ margin-top: 30px; /* space from button about us is 30px*/
+margin-left: 440px; /* space from the left is 440 */
+}
+
+.jee {
+ border: 1px solid gold; /*creates border around links begining with jee */
+ padding :10px 30px;
+ color: aliceblue;
+ text-decoration : none; /* creates text decoration of wavy line at the bottom if it is styled */
+ margin-right: 5px;
+ font-size: 13px;
+ text-transform: uppercase;
+}
+
+btn-one 
+{
+    background-color: darkgoldenrod;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+btn-two:hover
+{
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.5s ease-in;
+}
